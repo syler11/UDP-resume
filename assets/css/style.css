@@ -30,7 +30,24 @@
     background-color: #525252;
 }
 
-/*--------------------------------------------Special paddings/margins/text*/
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
@@ -50,7 +67,7 @@ h4 {
 }
 
 .inline-block {
-    display: block;
+    display: inline-block;
 }
 
 .row-table {
@@ -59,7 +76,7 @@ h4 {
 
 .section-column {
     display: table-cell;
-    padding: 0 30px 030px;
+    padding: 0 30px 30px;
     float: none;
 }
 
@@ -67,7 +84,7 @@ h4 {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /*--------------------------------------------Heading*/
@@ -116,13 +133,13 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -159,11 +176,11 @@ header {
 /*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*--------------------------------------------Footer*/
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -194,14 +211,14 @@ footer {
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px;
+    padding: 12px 0;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
     background: #8f8f8f;
-     transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -215,7 +232,7 @@ footer {
     padding: 20px;
 }
 
-/*--------------------------------------------Three Reasons*/
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -224,4 +241,39 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+/* ----------------------------------------Personal Info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
 }
